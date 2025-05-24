@@ -57,7 +57,14 @@ async function renderCategoryPage(categoryId) {
         return;
     }
 
-    const category = config.categories[categoryId];
+    // 从tech分类中查找Unity分类
+    const techCategory = config.categories.tech;
+    if (!techCategory || !techCategory.subcategories) {
+        console.error('未找到技术分类或子分类');
+        return;
+    }
+
+    const category = techCategory.subcategories.find(sub => sub.id === categoryId);
     if (!category) {
         console.error('未找到分类:', categoryId);
         return;
@@ -72,7 +79,7 @@ async function renderCategoryPage(categoryId) {
     if (category.subcategories) {
         const categoryGrid = document.querySelector('.category-grid');
         categoryGrid.innerHTML = category.subcategories
-            .map(sub => renderCategoryCard(sub, `categories/${categoryId}`))
+            .map(sub => renderCategoryCard(sub, `categories/tech/${categoryId}`))
             .join('');
     }
 }
