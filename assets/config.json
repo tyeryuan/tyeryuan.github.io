@@ -1,0 +1,40 @@
+{
+    "categories": {
+        "tech": {
+            "title": "技术笔记",
+            "description": "这里收录了所有与技术相关的文章和笔记",
+            "subcategories": [
+                {
+                    "id": "unity",
+                    "title": "Unity 开发",
+                    "description": "Unity 游戏开发技术笔记",
+                    "subcategories": [
+                        {
+                            "id": "unity-resource",
+                            "title": "资源管理",
+                            "description": "Unity 资源加载、管理、优化相关技术"
+                        },
+                        {
+                            "id": "unity-performance",
+                            "title": "性能优化",
+                            "description": "Unity 性能优化技巧和最佳实践"
+                        },
+                        {
+                            "id": "unity-editor",
+                            "title": "编辑器扩展",
+                            "description": "Unity 编辑器工具开发和扩展"
+                        }
+                    ]
+                }
+            ]
+        },
+        "study": {
+            "title": "学习心得",
+            "description": "学习方法和经验分享"
+        },
+        "life": {
+            "title": "生活随笔",
+            "description": "日常思考和感悟"
+        }
+    }
+} 
