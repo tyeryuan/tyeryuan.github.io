@@ -124,17 +124,27 @@ body {
     margin-top: 2rem;
 }
 
+.category-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.category-link:hover {
+    transform: translateY(-5px);
+}
+
 .category-card {
-    background-color: #fff;
+    background: #fff;
     border-radius: 8px;
-    padding: 2rem;
-    text-align: center;
+    padding: 20px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: background-color 0.3s ease;
+    transition: box-shadow 0.3s ease;
 }
 
 .category-card:hover {
-    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .category-card h3 {
